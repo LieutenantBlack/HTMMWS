@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/editText"
+        android:layout_gravity="center_horizontal"
+        android:text="What Does Stem Stand For?"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"
+        android:textStyle="bold|normal" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/T"
+        android:longClickable="false"
+        android:background="@drawable/t"
+        android:onClick="OnClick2"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/E"
+        android:layout_toRightOf="@+id/S" />
+
+    <Button
+        android:id="@+id/E"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/e"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/M"
+        android:onClick="Technology"
+        android:layout_toLeftOf="@+id/M" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/S"
+        android:background="@drawable/s"
+        android:layout_alignTop="@+id/T"
+        android:onClick="Science"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+
+        android:id="@+id/M"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/m"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="138dp"
+        android:onClick="Mathematics"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/T"
+        android:background="@drawable/question" />
+</RelativeLayout>
